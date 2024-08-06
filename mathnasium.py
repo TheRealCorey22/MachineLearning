@@ -22,7 +22,7 @@ class NeuralMath:
 
         return dot_product
 
-    def arrayMaximum(self, arr1: np.ndarray, arr2: np.ndarray) -> int:
+    def arrayMaximum(self, arr1: np.ndarray, arr2: np.ndarray) -> np.ndarray:
         
 
         maximum = np.maximum(arr1, arr2)
@@ -35,7 +35,7 @@ class NeuralMath:
 
         return maximum
     
-    def arrayExponent(self, arr1: np.ndarray, arr2: np.ndarray) -> int:
+    def arrayExponent(self, arr1: np.ndarray, arr2: np.ndarray) -> tuple[np.ndarray, np.ndarray]:
         
 
         exp_arr1 = np.exp(arr1)
@@ -51,7 +51,7 @@ class NeuralMath:
 
         return exp_arr1, exp_arr2
 
-    def arraySum(self, arr1: np.ndarray, arr2: np.ndarray) -> int:
+    def arraySum(self, arr1: np.ndarray, arr2: np.ndarray) -> tuple[int , int]:
         
 
         sum_arr1 = arr1.sum()
@@ -61,12 +61,12 @@ class NeuralMath:
 
         print(f"\nArray 1: {arr1}\nArray 2: {arr2}")
 
-        print(f"Array 1 Sum: {arr1}\nArray 2 Sum: {arr2}")
+        print(f"Array 1 Sum: {sum_arr1}\nArray 2 Sum: {sum_arr2}")
 
     
         return sum_arr1, sum_arr2
 
-    def arrayLog(self, arr1: List[int], arr2: List[int]) -> int:
+    def arrayLog(self, arr1: List[int], arr2: List[int]) -> tuple[np.ndarray, np.ndarray]:
         
 
         log_arr1 = np.log(arr1)
@@ -78,7 +78,6 @@ class NeuralMath:
 
         print(f"Array 1 Log: {log_arr1}\nArray 2 Log: {log_arr2}")
 
-    
 
 NeuralMath().arrayDotProduct(array1, array2)
 
