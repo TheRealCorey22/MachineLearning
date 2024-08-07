@@ -1,2 +1,2 @@
-## Mathnasium
-- Playground for Neural Networking Related Math!
+## Neuralnasium
+- Playground for Neural Networking Related Features!
