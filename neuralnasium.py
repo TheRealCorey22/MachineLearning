@@ -94,13 +94,17 @@ NeuralMath().arraySum(array1, array2)
 NeuralMath().arrayLog(array1, array2)
 """
 
-input = [0,1,2,3]
 
-weight0 = [2, 2.2, 3.1, 5]
+inputs = [1.0, 2.0, 3.0, 2.5]
 
-input_weight0 = zip(input, weight0) # Combines Iterables
+weights = [[0.2, 0.8, -0.5, 1.0], [0.5, -0.91, 0.26, -0.5], [-0.26, -0.27, 0.17, 0.87]]
 
-input_weight0 = list(input_weight0) # Converts Iterator to List
+biases = [2, 3, 0.5]
 
-print(input_weight0)
+
+for neuron_weights, neuron_biases in zip(weights, biases):
+    print(f"Neuron Weights: {neuron_weights}, Neuron Bias: {neuron_biases}")
+
+
+
 
