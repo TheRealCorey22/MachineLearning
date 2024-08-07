@@ -7,6 +7,7 @@ biases = [2, 3, 0.5]
 
 
 
+# Multiplies Each Input By Corresponding Weight then adds Bias.
 layer_outputs = [] # Output of Current Layer
 
 for neuron_weights, neuron_bias in zip(weights, biases):
