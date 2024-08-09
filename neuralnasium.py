@@ -3,7 +3,6 @@ from typing import List
 
 
 array1 = np.array([1, 3, 5])
-
 array2 = np.array([2, 4, 6])
 
 
